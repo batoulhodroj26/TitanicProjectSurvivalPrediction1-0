@@ -233,7 +233,31 @@ __pycache__/
 .env
 venv/
 data/submission.csv
+Output
+🔍 Loading data...
+Train shape: (891, 12), Test shape: (418, 11)
 
+📚 Training model...
+E:\TitanicProject\src\train_model.py:12: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+  df['Age'].fillna(df['Age'].median(), inplace=True)
+E:\TitanicProject\src\train_model.py:13: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+  df['Fare'].fillna(df['Fare'].median(), inplace=True)
+E:\TitanicProject\src\train_model.py:14: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+  df['Embarked'].fillna('S', inplace=True)
+Model Accuracy: 0.7989
+✅ Model trained!
 
+📝 Making predictions...
+E:\TitanicProject\src\predict.py:6: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+  df['Age'].fillna(df['Age'].median(), inplace=True)
+E:\TitanicProject\src\predict.py:7: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+  df['Fare'].fillna(df['Fare'].median(), inplace=True)
+✅ Submission saved to data/submission.csv
 
+✅ All done! Check data/submission.csv for results.
 
